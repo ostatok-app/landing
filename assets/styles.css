@@ -1804,3 +1804,26 @@ h3 {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+.example-detail { color:var(--muted);font-size:12px;line-height:1.6;margin:-10px 0 18px; }
+
+/* Audience */
+.audience-section { background:#f6f8f9; }
+.audience-layout { display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px;align-items:start; }
+.audience-intro { padding-top:24px; }
+.audience-intro h2 { max-width:360px; }
+.audience-intro>p:not(.eyebrow) { color:var(--muted);font-size:16px;line-height:1.7; }
+.audience-card { background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden; }
+.audience-list { list-style:none;margin:0;padding:0 28px; }
+.audience-list li { display:flex;gap:16px;align-items:flex-start;padding:25px 0;border-bottom:1px solid var(--border); }
+.audience-list li:last-child { border-bottom:0; }
+.audience-icon { display:flex;align-items:center;justify-content:center;flex-shrink:0;width:40px;height:40px;border-radius:11px;background:var(--soft);color:var(--accent); }
+.audience-icon .icon { width:21px;height:21px; }
+.audience-list h3 { margin:0 0 6px;font-size:16px;line-height:1.4; }
+.audience-list p { margin:0;color:var(--muted);font-size:14px;line-height:1.7; }
+@media(max-width:800px) { .audience-layout { grid-template-columns:1fr;gap:22px; } .audience-intro { padding-top:0; } .audience-intro h2 { max-width:none; } .audience-intro>p:not(.eyebrow) { margin-bottom:0; } }
+@media(max-width:520px) { .audience-list { padding:0 20px; } .audience-list li { gap:13px;padding:20px 0; } }
+
+/* Keep the audience and features sections visually connected. */
+.audience-section { padding-bottom:24px; }
+.audience-section + .features-section { padding-top:24px; }
