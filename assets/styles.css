@@ -1837,3 +1837,19 @@ h3 {
 .preview-income>h3 { grid-column:1;grid-row:1;margin:0; }
 .preview-income>.preview-card { grid-column:1;grid-row:2; }
 .preview-columns>.breakdown { grid-column:2;grid-row:2; }
+
+@media (max-width:520px) {
+  .hero-copy .actions {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    gap:8px;
+  }
+  .hero-copy .actions .button {
+    min-width:0;
+    padding-inline:8px;
+    text-align:center;
+  }
+}
+
+.hero-note { align-items:flex-start; }
+.hero-note .status-dot { margin-top:.5em; }
