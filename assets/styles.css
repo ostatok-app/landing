@@ -1827,3 +1827,6 @@ h3 {
 /* Keep the audience and features sections visually connected. */
 .audience-section { padding-bottom:24px; }
 .audience-section + .features-section { padding-top:24px; }
+
+.product-nav>.product-brand { display:flex;align-items:center;gap:6px;padding:0 3px;margin:0 0 14px;color:#202a32;font-size:10px;font-weight:700;white-space:nowrap; }
+.product-brand img { flex-shrink:0; }
